@@ -24,9 +24,7 @@ jobs:
         with:
           go-version: '1.22'
       - name: golangci-lint
-        uses: golangci/golangci-lint-action@v6
+        uses: lherman-cs/golangci-lint-action@master
         with:
           version: v1.58
-          run: |
-            golangci-lint custom
-            cp ./custom-gcl `find -type f -name "golangci-lint"`
+          module-aware: true
