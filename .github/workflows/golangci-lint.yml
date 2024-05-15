@@ -27,5 +27,6 @@ jobs:
         uses: golangci/golangci-lint-action@v6
         with:
           version: v1.58
-          install-mode: goinstall
-
+          run: |
+            golangci-lint custom
+            cp ./custom-gcl `find -type f -name "golangci-lint"`
