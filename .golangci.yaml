@@ -1,0 +1,7 @@
+linters-settings:
+  custom:
+    nilaway:
+      type: "module"
+      description: Static analysis tool to detect potential nil panics in Go code.
+# NilAway can be referred to as `nilaway` just like any other golangci-lint analyzers in other 
+# parts of the configuration file.
