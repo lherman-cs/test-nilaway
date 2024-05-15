@@ -28,3 +28,4 @@ jobs:
         with:
           version: v1.58
           module-aware: true
+          only-new-issues: true
