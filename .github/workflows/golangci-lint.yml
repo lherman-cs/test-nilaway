@@ -24,7 +24,7 @@ jobs:
         with:
           go-version: '1.22'
       - name: golangci-lint
-        uses: lherman-cs/golangci-lint-action@v0.1
+        uses: lherman-cs/golangci-lint-action@master
         with:
           version: v1.58
           module-aware: true
